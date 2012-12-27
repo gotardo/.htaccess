@@ -1,7 +1,12 @@
-# This .htaccess file is used to speed up this website
-# See https://github.com/sergeychernyshev/.htaccess
-# Forked at https://github.com/gotardo/.htaccess
+# ----------------------------------------------------------------------
+# 
+# Block access to critical folders
+#
+# ----------------------------------------------------------------------
 
+
+Redirect 301 /.git/ /
+Redirect 301 /sass/ /
 
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
